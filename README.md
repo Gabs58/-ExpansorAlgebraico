@@ -3,7 +3,7 @@
 Expansor algebraico
 
 ## Descripción
-ExpaAlge es una herramienta para expandir expresiones algebraicas y convertirlas a formato LaTeX de manera sencilla, tanto desde una interfaz gráfica (GUI) como desde la línea de comandos (CLI). El proyecto está pensado para facilitar el manejo de expresiones matemáticas, permitiendo al usuario ingresar expresiones, expandirlas paso a paso, visualizar el resultado en LaTeX y exportar el resultado a PDF.
+Expansor Algebraico  es una herramienta para expandir expresiones algebraicas y convertirlas a formato LaTeX de manera sencilla, tanto desde una interfaz gráfica (GUI) como desde la línea de comandos (CLI). El proyecto está pensado para facilitar el manejo de expresiones matemáticas, permitiendo al usuario ingresar expresiones, expandirlas y visualizar el resultado en LaTeX y exportar el resultado a PDF.
 
 ---
 
