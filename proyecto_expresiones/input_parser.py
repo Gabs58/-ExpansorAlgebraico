@@ -1,5 +1,6 @@
+
 """
-Módulo para convertir expresiones algebraicas en texto a expresiones simbólicas de sympy.
+Parte y Reecribe para convertir expresiones algebraicas en texto a expresiones simbólicas de sympy.
 Este módulo maneja la conversión de la entrada del usuario a un formato que sympy puede procesar.
 
 Funcionalidades:
