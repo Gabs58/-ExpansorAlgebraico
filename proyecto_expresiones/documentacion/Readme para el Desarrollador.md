@@ -73,14 +73,12 @@ Para que el sistema pueda exportar resultados a PDF y renderizar correctamente e
 2. Ejecute el instalador y acepte las condiciones de copia (como se muestra en la imagen a continuación).
 3. Complete la instalación con la configuración por defecto.
 
-![Pantalla de aceptación de MiKTeX](doc/img/miktex_accept.png)
-
 Nota: Si MiKTeX no está instalado, la exportación a PDF y el renderizado avanzado de LaTeX no funcionarán correctamente.
 
 ## Documentación Técnica Avanzada
 
 Para detalles sobre la arquitectura, dependencias, integración de LaTeX y funcionamiento interno, consulte el archivo:
-- [`README_TECNICO.md`](README_TECNICO.md)
+(README_TECNICO.md)
 
 
 
