@@ -85,7 +85,7 @@ PIL>=9.5.0             # Procesamiento de imágenes
 - Normalización de subíndices (`x_1` → `x1`)
 - Conversión de letras griegas
 - Inserción de multiplicación explícita
-- Eliminación de comandos problemáticos (`\limits`, `\mathrm`)
+
 
 #### 2. Postprocesamiento para Visualización
 - Limpieza de comandos incompatibles con matplotlib
