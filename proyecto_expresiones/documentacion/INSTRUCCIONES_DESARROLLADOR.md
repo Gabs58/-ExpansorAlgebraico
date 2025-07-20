@@ -1,7 +1,8 @@
 # Readme para el Desarrollador - ExpaAlgebraico
-#contiene las nesesidades de el sistema para ejecucion correcta versioijn de Pyton 3.12 para poder usar  LaTeX2SymPy2 y  la instalación de MiKTeX para la saliuda.
+#contiene las nesesidades de el sistema para ejecucion correcta: version de Pyton 3.12 para poder usar  LaTeX2SymPy2 y  la instalación de MiKTeX para la saliuda.
 -------------------------------------------------------------------------------
--se creo un parche para evitar esto pero si no funciona en parche tener en cuenta.
+-se creo un parche para evitar el error de las distintas versiones de Pyton  pero si no funciona en parche tener en cuenta:
+
 ## IMPORTANTE PARA TODOS LOS USUARIOS DE PYTHON
 
 Antes de ejecutar la GUI o cualquier script, asegúrese de que:
