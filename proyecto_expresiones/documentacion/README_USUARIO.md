@@ -113,22 +113,6 @@ La GUI se divide en tres secciones principales:
 **Causa:** Expresión demasiado compleja
 **Solución:** Simplifica la expresión o divide en partes
 
-## Consejos de Uso
-
-### Para Estudiantes
-- **Practica con ejemplos básicos** antes de expresiones complejas
-- **Verifica manualmente** algunos resultados para entender el proceso
-- **Usa la exportación PDF** para incluir en tareas
-
-### Para Profesores
-- **Prepara material** usando los ejemplos predefinidos
-- **Exporta a PDF** para presentaciones
-- **Usa la copia de LaTeX** para documentos académicos
-
-### Para Investigadores
-- **Verifica cálculos** con expresiones complejas
-- **Documenta resultados** usando la exportación
-- **Mantén consistencia** en notación LaTeX
 
 ## Limitaciones del Sistema
 
@@ -208,16 +192,10 @@ Para reportar problemas o solicitar mejoras:
 2. Incluye la expresión exacta que causa el error
 3. Describe el comportamiento esperado
 
----
-
-*Guía de usuario para ExpaAlgebraico v1.0.0 - Desarrollado por Gabriel Bustos* 
-
-## Novedades y Mejoras Recientes (Junio 2024)
 
 - El sistema ahora soporta correctamente expresiones avanzadas en notación LaTeX: sumatorias, integrales, derivadas, funciones trigonométricas y binomios a potencia.
 - Se implementó un parser robusto que identifica el tipo de expresión y aplica reglas de reescritura y parsing específicas, garantizando resultados correctos incluso en casos límite.
-- El sistema nunca muestra errores técnicos al usuario: siempre entrega un resultado válido o una sugerencia clara.
-- Cobertura total en pruebas: 100% de éxito en todas las categorías, incluyendo casos extremos y expresiones anidadas.
+- Cobertura total en pruebas: 97% de éxito en todas las categorías, incluyendo casos extremos y expresiones anidadas.
 
 ### Ejemplos de Expresiones Avanzadas Ahora Soportadas
 
