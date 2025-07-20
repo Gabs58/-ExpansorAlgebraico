@@ -9,6 +9,7 @@ documentación completa en carpeta del proyecto.
 
 
 ExpaAlgebraico/
+
 ├── proyecto_expresiones
 
 │   ├── giu app.py              # Interfaz gráfica principal
