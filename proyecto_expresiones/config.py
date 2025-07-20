@@ -59,7 +59,7 @@ EJEMPLOS_INTEGRALES = [
 ]
 
 # Multiplicatorias (Productorias)
-Productorias = [
+MULTIPLICATORIAS = [
     r"\prod_{n=1}^{5} (n+1)(n-1)",
     r"\prod_{i=1}^{3} (i+2)(i-2)",
     r"\prod_{k=1}^{n} (k+1)(k-1)",
