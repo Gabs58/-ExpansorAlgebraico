@@ -33,21 +33,72 @@ El sistema cumple una premisa fundamental específica:
 - Copia al portapapeles para uso en documentos
 
 ## Casos de Uso
+Etapas del Pipeline
 
-### Para Estudiantes
-- **Práctica de álgebra:** Verificar expansiones manuales
-- **Aprendizaje:** Ver paso a paso cómo se expanden expresiones
-- **Tareas:** Generar resultados precisos para trabajos académicos
+Entrada: El usuario proporciona una expresión matemática
+Detección de formato:
 
-### Para Profesores
-- **Preparación de material:** Crear ejemplos expandidos rápidamente
-- **Verificación:** Comprobar resultados de ejercicios
-- **Presentaciones:** Exportar expresiones a PDF para documentos
+Verifica si es LaTeX (busca comandos como \sum, \alpha, etc.)
 
-### Para Investigadores
-- **Análisis matemático:** Procesar expresiones complejas
-- **Documentación:** Generar LaTeX para papers y artículos
-- **Validación:** Verificar cálculos algebraicos
+Verifica si es texto plano
+
+Preprocesamiento:
+
+Limpia espacios y caracteres especiales
+
+Valida que la expresión tenga caracteres válidos
+
+Parsing (estrategia en cascada):
+
+Intento 1: Si es LaTeX y latex2sympy2 está disponible:
+
+LaTeX → latex2sympy2 → Expresión SymPy
+
+Intento 2: Si el Intento 1 falla, usar parser manual:
+
+LaTeX → GestorReglas.aplicar_todas() → parse_expr() → Expresión SymPy
+
+Intento 3: Si es texto plano:
+
+Texto → _string_to_sympy() → Expresión SymPy
+
+Casos especiales:
+
+Productos notables: (a+b)(a-b) → a^2-b^2
+
+Integrales y sumatorias
+
+Variables griegas
+
+3. GestorReglas (Pipeline de transformación)
+Aplica reglas en secuencia:
+
+Expresión LaTeX → ReglaDelimitadores → ReglaConstructos → ReglaFunciones → ReglaGriegas → ReglaLimpieza → Expresión para SymPy
+
+Cada regla realiza transformaciones específicas:
+
+ReglaDelimitadores: \left( → (, \right) → )
+
+ReglaConstructos: \sum_{i=1}^{n} → Sum(..., (i, 1, n))
+
+ReglaFunciones: \sin → sin, \cos → cos
+
+ReglaGriegas: \alpha → alpha, \beta → beta
+
+ReglaLimpieza: Limpieza final para compatibilidad con SymPy
+
+4. Manejo de Errores y Fallbacks
+Si un método falla, se intenta con otro en este orden:
+
+latex2sympy2 (más robusto)
+
+Parser manual con GestorReglas
+
+Casos especiales predefinidos
+
+Parser de texto simple
+
+Este diseño en cascada asegura que incluso si falla un método, el sistema intentará otros enfoques para procesar la expresión.
 
 ## Ejemplos de Uso
 
