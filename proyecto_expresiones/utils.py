@@ -1,58 +1,39 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
-Módulo de utilidades para el Expansor Algebraico.
-Contiene funciones auxiliares y herramientas esenciales para el parseo y validación de expresiones.
+Utilidades para ExpaAlgebraico
+Funciones auxiliares que no pertenecen al parser principal
 """
 
-import re
+from typing import Optional
 
-# --- VALIDACIÓN DE EXPRESIONES ---
-def validate_mathematical_expression(expr_str):
+def identificar_categoria_pedagogica(expr: str, categorias_ejemplos: dict) -> Optional[str]:
     """
-    Valida si una cadena de texto tiene la estructura básica de una expresión matemática válida.
-    Realiza varias comprobaciones, como caracteres permitidos, balanceo de paréntesis y uso de operadores.
-    No es un validador sintáctico completo (para eso se usa SymPy), pero filtra errores obvios.
+    Identifica la categoría pedagógica de una expresión según las categorías proporcionadas.
+    
+    Args:
+        expr (str): Expresión a categorizar
+        categorias_ejemplos (dict): Diccionario con categorías y ejemplos
+        
+    Returns:
+        Optional[str]: Categoría encontrada o None si no se encuentra
     """
-    problems = []
-    if not expr_str or not expr_str.strip():
-        problems.append("La expresión está vacía")
-        return False, problems
-    valid_chars = set('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-*/^()[]{}= .')
-    invalid_chars = set(expr_str) - valid_chars 
-    if invalid_chars:
-        problems.append(f"Caracteres inválidos encontrados: {', '.join(invalid_chars)}")
-    if not are_parentheses_balanced(expr_str):
-        problems.append("Paréntesis no balanceados")
-    if re.match(r'^[+\-*/^]', expr_str.strip()): 
-        problems.append("La expresión no puede empezar con un operador")
-    if re.search(r'[+\-*/^]$', expr_str.strip()):
-        problems.append("La expresión no puede terminar con un operador")
-    if re.search(r'[+\-*/^]{2,}', expr_str):
-        problems.append("Operadores consecutivos encontrados")
-    return len(problems) == 0, problems
-
-def are_parentheses_balanced(expr_str):
-    """
-    Verifica si todos los tipos de paréntesis (redondos, cuadrados, llaves) están correctamente balanceados
-    en una expresión. Utiliza una pila (stack) para rastrear los paréntesis de apertura.
-    """
-    stack = []
-    pairs = {'(': ')', '[': ']', '{': '}'}
-    for char in expr_str:
-        if char in pairs:
-            stack.append(char)
-        elif char in pairs.values():
-            if not stack:
-                return False
-            if pairs[stack.pop()] != char:
-                return False
-    return len(stack) == 0
-
-# --- LIMPIEZA DE EXPRESIONES ---
-def clean_expression(expr_str):
-    """
-    Elimina espacios de una expresión matemática para facilitar el parseo.
-    """
-    return expr_str.replace(' ', '')
-
-# Alias para compatibilidad
-is_valid_expression = validate_mathematical_expression
+    expr_normalizado = expr.strip().replace(' ', '').replace('\n', '').replace(r'\left', '').replace(r'\right', '')
+    
+    for categoria, ejemplos in categorias_ejemplos.items():
+        for ejemplo in ejemplos:
+            ejemplo_normalizado = ejemplo.strip().replace(' ', '').replace('\n', '').replace(r'\left', '').replace(r'\right', '')
+            
+            # Coincidencia exacta
+            if expr == ejemplo:
+                return categoria
+                
+            # Coincidencia normalizada
+            if expr_normalizado == ejemplo_normalizado:
+                return categoria
+                
+            # Coincidencia parcial básica
+            if expr_normalizado in ejemplo_normalizado or ejemplo_normalizado in expr_normalizado:
+                return categoria
+                
+    return None
