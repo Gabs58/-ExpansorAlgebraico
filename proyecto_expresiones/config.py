@@ -20,7 +20,7 @@ EJEMPLOS_BASICOS = [
     r"(x^{2}+xy+y^{2})(x^{2}-xy+y^{2})"
 ]
 
-# Ejemplos con productos de binomios y trinomios (solo dos factores)
+# Ejemplos con productos de binomios y trinomios 
 EJEMPLOS_PRODUCTOS_BINOMIOS = [
     r"(x+1)(x-1)",
     r"(x^{2}+1)(x-1)",
@@ -30,7 +30,7 @@ EJEMPLOS_PRODUCTOS_BINOMIOS = [
     r"(x+y+z)(x-y-z)"
 ]
 
-# Ejemplos con productos de polinomios y potencias (solo dos factores)
+# Ejemplos con productos de polinomios y potencias 
 EJEMPLOS_PRODUCTOS_POTENCIAS = [
     r"(x+1)^{2}(x-1)",
     r"(x+y)^{2}(x-y)",
@@ -40,7 +40,7 @@ EJEMPLOS_PRODUCTOS_POTENCIAS = [
     r"(x^{3}+1)(x^{3}-1)"
 ]
 
-# Ejemplos con sumatorias de productos (solo dos factores dentro de la sumatoria)
+# Ejemplos con sumatorias de productos 
 EJEMPLOS_SUMATORIAS = [
     r"\sum_{n=1}^{5} (n+1)(n-1)",
     r"\sum_{k=0}^{m} (k^{2}+1)(k-1)",
@@ -49,7 +49,7 @@ EJEMPLOS_SUMATORIAS = [
     r"\sum_{p=1}^{4} (p^{3}+1)(p-1)"
 ]
 
-# Ejemplos con integrales de productos (solo dos factores dentro de la integral)
+# Ejemplos con integrales de productos 
 EJEMPLOS_INTEGRALES = [
     r"\int (x+1)(x-1) dx",
     r"\int (x^{2}+1)(x-1) dx",
@@ -59,7 +59,7 @@ EJEMPLOS_INTEGRALES = [
 ]
 
 # Multiplicatorias (Productorias)
-MULTIPLICATORIAS = [
+Productorias = [
     r"\prod_{n=1}^{5} (n+1)(n-1)",
     r"\prod_{i=1}^{3} (i+2)(i-2)",
     r"\prod_{k=1}^{n} (k+1)(k-1)",
@@ -67,7 +67,7 @@ MULTIPLICATORIAS = [
     r"\prod_{m=1}^{2} (m+3)(m-3)"
 ]
 
-# Ejemplos con derivadas simples de productos (solo dos factores dentro de la derivada)
+# Ejemplos con derivadas simples de productos 
 EJEMPLOS_DERIVADAS = [
     r"\frac{d}{dx}[(x+1)(x-1)]",
     r"\frac{d}{dx}[(x^{2}+1)(x-1)]",
@@ -210,6 +210,54 @@ EJEMPLOS_VARIABLES_DISTINTAS = [
     r"(x+y+z)(a+b+c)"
 ]
 
+# Ejemplos con funciones trigonométricas
+EJEMPLOS_TRIGONOMETRICOS = [
+    r"(\sin{x}+\cos{x})(\sin{x}-\cos{x})",
+    r"(\sin^{2}{x}+1)(\sin{x}-1)",
+    r"(\cos{x}+1)(\cos{x}-1)",
+    r"(\tan{x}+1)(\tan{x}-1)",
+    r"(\sin{x}+\cos{x})^{2}(\sin{x}-\cos{x})",
+    r"(\sin{x}+1)(\sin{x}-1)(\cos{x}+1)",
+    r"(\sin^{2}{x}+\cos^{2}{x})(\sin{x}-\cos{x})",
+    r"(\sin{x}+\cos{x})(\sin{x}+\cos{x})(\sin{x}-\cos{x})",
+    r"(\sin{2x}+\cos{2x})(\sin{2x}-\cos{2x})",
+    r"(\sin{\theta}+\cos{\theta})(\sin{\theta}-\cos{\theta})"
+]
+
+# Ejemplos con integrales de funciones trigonométricas
+EJEMPLOS_INTEGRALES_TRIGONOMETRICAS = [
+    r"\int (\sin{x}+\cos{x})(\sin{x}-\cos{x}) dx",
+    r"\int (\sin^{2}{x}+1)(\sin{x}-1) dx",
+    r"\int (\cos{x}+1)(\cos{x}-1) dx",
+    r"\int (\sin{x}+\cos{x})^{2}(\sin{x}-\cos{x}) dx",
+    r"\int_{0}^{\pi} (\sin{x}+\cos{x})(\sin{x}-\cos{x}) dx"
+]
+
+# Ejemplos con derivadas de funciones trigonométricas
+EJEMPLOS_DERIVADAS_TRIGONOMETRICAS = [
+    r"\frac{d}{dx}[(\sin{x}+\cos{x})(\sin{x}-\cos{x})]",
+    r"\frac{d}{dx}[(\sin^{2}{x}+1)(\sin{x}-1)]",
+    r"\frac{d}{dx}[(\cos{x}+1)(\cos{x}-1)]",
+    r"\frac{d}{dx}[(\sin{x}+\cos{x})^{2}(\sin{x}-\cos{x})]",
+    r"\frac{d^{2}}{dx^{2}}[(\sin{x}+\cos{x})(\sin{x}-\cos{x})]"
+]
+
+# Ejemplos con sumatorias de funciones trigonométricas
+EJEMPLOS_SUMATORIAS_TRIGONOMETRICAS = [
+    r"\sum_{n=1}^{3} (\sin{n\theta}+\cos{n\theta})(\sin{n\theta}-\cos{n\theta})",
+    r"\sum_{k=0}^{2} (\sin^{2}{k\pi}+1)(\sin{k\pi}-1)",
+    r"\sum_{i=1}^{4} (\cos{i\alpha}+1)(\cos{i\alpha}-1)",
+    r"\sum_{j=1}^{3} (\sin{j\beta}+\cos{j\beta})^{2}(\sin{j\beta}-\cos{j\beta})"
+]
+
+# Ejemplos con productos de funciones trigonométricas
+EJEMPLOS_PRODUCTOS_TRIGONOMETRICOS = [
+    r"\prod_{n=1}^{2} (\sin{n\theta}+\cos{n\theta})(\sin{n\theta}-\cos{n\theta})",
+    r"\prod_{k=1}^{3} (\sin^{2}{k\pi}+1)(\sin{k\pi}-1)",
+    r"\prod_{i=1}^{2} (\cos{i\alpha}+1)(\cos{i\alpha}-1)",
+    r"\prod_{j=1}^{2} (\sin{j\beta}+\cos{j\beta})^{2}(\sin{j\beta}-\cos{j\beta})"
+]
+
 # CASOS LÍMITE - Productos de factores polinómicos complejos
 EJEMPLOS_CASOS_LIMITE_POLINOMIOS = [
     "(x^7+7x^6+21x^5+35x^4+35x^3+21x^2+7x+1)(x^7-7x^6+21x^5-35x^4+35x^3-21x^2+7x-1)",
@@ -220,7 +268,7 @@ EJEMPLOS_CASOS_LIMITE_POLINOMIOS = [
     "(x^{15}+15x^{14}+105x^{13}+455x^{12}+1365x^{11}+3003x^{10}+5005x^9+6435x^8+6435x^7+5005x^6+3003x^5+1365x^4+455x^3+105x^2+15x+1)(x^{15}-15x^{14}+105x^{13}-455x^{12}+1365x^{11}-3003x^{10}+5005x^9-6435x^8+6435x^7-5005x^6+3003x^5-1365x^4+455x^3-105x^2+15x-1)"
 ]
 
-# CASOS LÍMITE - Productos de polinomios de grado alto (REEMPLAZADO: antes eran fracciones)
+# CASOS LÍMITE - Productos de polinomios de grado alto 
 EJEMPLOS_CASOS_LIMITE_POLINOMIOS_ALTOS = [
     "(x^5+5x^4+10x^3+10x^2+5x+1)(x^5-5x^4+10x^3-10x^2+5x-1)(x^3+1)",
     "(x^6+6x^5+15x^4+20x^3+15x^2+6x+1)(x^6-6x^5+15x^4-20x^3+15x^2-6x+1)(x^4+1)",
@@ -409,7 +457,7 @@ EJEMPLOS_VARIABLES_GRIEGAS = [
 ]
 
 # === NUEVA CATEGORÍA: Ejemplos Cheat Sheet (LaTeX) ===
-EJEMPLOS_CHEATSHEET_LATEX = [
+EJEMPLOS_CHEATSHEET = [
     r"(x_{1}^{2}+2x_{1}+1)(x_{1}-1)",
     r"(y_{2}^{2}+y_{2}+1)(y_{2}-1)",
     r"(a^{2}+2a+1)(a-1)",
@@ -449,6 +497,11 @@ CATEGORIAS_EJEMPLOS = {
     "Múltiples Variables": EJEMPLOS_MULTIPLES_VARIABLES,
     "Con Coeficientes": EJEMPLOS_COEFICIENTES,
     "Polinomios Grado Alto": EJEMPLOS_POLINOMIOS_GRADO_ALTO,
+    "Funciones Trigonométricas": EJEMPLOS_TRIGONOMETRICOS,
+    "Integrales Trigonométricas": EJEMPLOS_INTEGRALES_TRIGONOMETRICAS,
+    "Derivadas Trigonométricas": EJEMPLOS_DERIVADAS_TRIGONOMETRICAS,
+    "Sumatorias Trigonométricas": EJEMPLOS_SUMATORIAS_TRIGONOMETRICAS,
+    "Productos Trigonométricos": EJEMPLOS_PRODUCTOS_TRIGONOMETRICOS,
     "Casos Límite - Polinomios": EJEMPLOS_CASOS_LIMITE_POLINOMIOS,
     "Casos Límite - Polinomios Altos": EJEMPLOS_CASOS_LIMITE_POLINOMIOS_ALTOS,
     "Casos Límite - Sumatorias": EJEMPLOS_CASOS_LIMITE_SUMATORIAS,
