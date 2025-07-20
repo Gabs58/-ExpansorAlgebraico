@@ -152,7 +152,7 @@ Para reportar errores o solicitar mejoras:
 
 ## Licencia
 
-Este proyecto es propiedad intelectual de Gabriel Bustos. Todos los derechos reservados.
+Este proyecto es propiedad intelectual de Gabriel Bustos. uso educativo.
 
 ---
 
