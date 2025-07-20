@@ -5,7 +5,7 @@
 - **Versión:** 1.0.0
 - **Autor:** Gabriel Bustos
 - **Fecha:** 2025
-- **Licencia:** Propietaria
+- **Licencia:** Educativa.
 
 ## Descripción Técnica
 
