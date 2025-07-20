@@ -66,7 +66,7 @@ El sistema cumple una premisa fundamental específica:
 ## Instalación y Configuración
 
 ### Requisitos del Sistema
-- Python 3.8 o superior
+- Python 3.12 
 - Dependencias listadas en `requirements.txt`
 - Opcional: LaTeX para exportación a PDF
 
