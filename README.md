@@ -9,7 +9,7 @@ documentación completa en subcarpeta del proyecto.
 
 
 ExpaAlgebraico/
-├── proyecto_expresiones/
+├── proyecto_expresiones
 │   ├── giu app.py              # Interfaz gráfica principal
 │   ├── input_parser.py         # Parser de entrada LaTeX
 │   ├── expander.py             # Lógica de expansión
