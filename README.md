@@ -17,4 +17,4 @@ Extructura:
 └── venv312/                    # Entorno virtual
 ```
 
-## Limitaciones y Consideraciones
+
