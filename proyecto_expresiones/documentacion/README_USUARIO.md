@@ -137,6 +137,9 @@ La GUI se divide en tres secciones principales:
 - Expresiones con funciones trigonométricas básicas
 - Notación LaTeX estándar
 - Variables múltiples (x, y, z, etc.)
+- derivadas , productorias , sumatorias,integrales
+- letras griegas
+- varios tipos de multiplicación y parentecis  
 
 ### Lo que NO procesa:
 - Sumas o diferencias directas (no productos)
@@ -147,7 +150,7 @@ La GUI se divide en tres secciones principales:
 
 ## Ejemplos de Expresiones Válidas
 
-### ✅ Expresiones Correctas
+### Expresiones Correctas
 ```
 (x+1)(x-1)
 (x^2 + y^2)(x^2 - y^2)
@@ -156,7 +159,7 @@ La GUI se divide en tres secciones principales:
 (a+b+c)(a-b-c)
 ```
 
-### ❌ Expresiones Incorrectas
+### Expresiones Incorrectas
 ```
 x^2 + 2x + 1          # No es un producto
 \sin(x) + \cos(x)     # No es un producto
