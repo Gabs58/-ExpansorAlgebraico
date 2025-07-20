@@ -66,7 +66,7 @@ La GUI se divide en tres secciones principales:
 1. **Básicos:** Expresiones simples para práctica
 2. **Intermedios:** Casos con múltiples variables
 3. **Avanzados:** Expresiones complejas
-4. **Cheat Sheet:** Ejemplos con notación profesional
+4. **Cheat Sheet:** Ejemplos 
 
 ### Cómo Usar los Ejemplos
 1. Selecciona una categoría del menú desplegable
