@@ -59,10 +59,7 @@ La GUI se divide en tres secciones principales:
 2. Presiona "Expandir"
 3. El sistema mostrará el resultado expandido
 
-### Ejemplo 3: Con Funciones Trigonométricas
-**Entrada:** `\sin(x)(x^2 + 1)`
-**Resultado esperado:** `\sin(x) \cdot x^2 + \sin(x)`
-
+   
 ## Uso de Ejemplos Predefinidos
 
 ### Categorías Disponibles
