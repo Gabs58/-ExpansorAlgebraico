@@ -354,12 +354,9 @@ EJEMPLOS_MULTIPLICATORIAS_EXTREMAS = [
 
 # CASOS LÍMITE - Multiplicatorias en LaTeX
 EJEMPLOS_CASOS_LIMITE_MULTIPLICATORIAS = [
-    r"\displaystyle\prod_{i=1}^{n} \left(i+1\right)\left(i-1\right)",
-    r"\displaystyle\prod\limits_{k=1}^{m} \left(k^2+1\right)\left(k^2-1\right)",
     r"\prod\nolimits_{j=1}^{p} \left(j^3+3j^2+3j+1\right)\left(j^3-3j^2+3j-1\right)",
     r"\prod_{i=1}^{q} \left(i^4+4i^3+6i^2+4i+1\right)\left(i^4-4i^3+6i^2-4i+1\right)",
     r"\displaystyle\prod_{n=1}^{r} \left(n^5+5n^4+10n^3+10n^2+5n+1\right)\left(n^5-5n^4+10n^3-10n^2+5n-1\right)",
-    r"\prod\limits_{m=1}^{s} \left(m^6+6m^5+15m^4+20m^3+15m^2+6m+1\right)\left(m^6-6m^5+15m^4-20m^3+15m^2-6m+1\right)"
 ]
 
 # CASOS EXTREMOS - Integrales extremas
