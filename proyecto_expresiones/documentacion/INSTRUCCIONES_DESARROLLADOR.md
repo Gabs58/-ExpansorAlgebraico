@@ -1,7 +1,7 @@
 # Readme para el Desarrollador - ExpaAlgebraico
 
 -------------------------------------------------------------------------------
-
+se creo un parche para evitar esto pero si no funciona en parche tener en cuenta.
 ## IMPORTANTE PARA TODOS LOS USUARIOS DE PYTHON
 
 Antes de ejecutar la GUI o cualquier script, asegúrese de que:
