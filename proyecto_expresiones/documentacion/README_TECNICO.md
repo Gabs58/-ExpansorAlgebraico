@@ -27,36 +27,6 @@ El sistema está diseñado para expandir expresiones que cumplen la siguiente pr
   - `_clean_expression_body_robust()`: Limpieza avanzada de subíndices, griegas, multiplicación implícita y comandos LaTeX.
   - Fallbacks específicos para cada tipo, garantizando siempre una salida válida.
 
-**Nuevo flujo del parser:**
-```
-Entrada LaTeX
-   ↓
-Identificación de tipo
-   ↓
-Reescritura robusta específica
-   ↓
-Limpieza optimizada
-   ↓
-Parsing SymPy
-   ↓
-Fallback seguro (si es necesario)
-   ↓
-Salida SymPy
-```
-
-**Casos límite manejados:**
-- Expresiones anidadas, variables complejas, límites infinitos, expresiones largas (>1200 caracteres), errores de subscriptabilidad.
-
-**Cobertura de tests (Junio 2024):**
-| Categoría         | Antes | Ahora |
-|-------------------|-------|-------|
-| Sumatorias        | 0%    | 100%  |
-| Integrales        | 0%    | 100%  |
-| Derivadas         | 0%    | 100%  |
-| Trigonométricas   | 0%    | 100%  |
-| Binomios potencias| 0%    | 100%  |
-| Polinomios simples| 100%  | 100%  |
-| Multivariables    | 100%  | 100%  |
 
 **Robustez:**
 - El parser nunca muestra errores técnicos al usuario y siempre entrega un resultado válido o una sugerencia clara.
@@ -166,13 +136,6 @@ PIL>=9.5.0             # Procesamiento de imágenes
 - **Memoria:** Gestión automática de recursos matplotlib
 - **Tiempo:** Procesamiento en tiempo real para expresiones típicas
 
-## Seguridad
-
-### Consideraciones de Seguridad
-- Validación de entrada en parser
-- Sanitización de expresiones LaTeX
-- Limitación de recursos en GUI
-- Manejo seguro de archivos temporales
 
 ## Mantenimiento
 
@@ -187,5 +150,3 @@ PIL>=9.5.0             # Procesamiento de imágenes
 - Mejoras en preprocesamiento
 
 ---
-
-*Documentación técnica generada automáticamente por ExpaAlgebraico v1.0.0* 
