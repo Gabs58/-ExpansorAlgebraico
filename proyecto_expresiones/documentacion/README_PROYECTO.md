@@ -101,7 +101,7 @@ ExpaAlgebraico/
 ├── README_TECNICO.md           # Documentación técnica
 ├── README_PROYECTO.md          # Esta documentación
 ├── README_USUARIO.md           # Guía de usuario
-├── requirements.txt            # Dependencias
+├── README_desarrolador.md      # Dependencias
 └── venv312/                    # Entorno virtual
 ```
 
