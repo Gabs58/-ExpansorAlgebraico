@@ -29,7 +29,8 @@ class AlgebraicExpanderCLI:
         """
         try:
             if input_format == "latex":
-                expr = self.parser.parse_latex(input_expr) # Parsea como LaTeX
+                # Usar el pipeline centralizado para parsing robusto
+                expr = self.parser.parse_pipeline(input_expr)
             else:
                 expr = self.parser.parse(input_expr) # Parsea como texto plano
 
