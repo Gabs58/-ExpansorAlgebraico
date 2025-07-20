@@ -12,7 +12,7 @@ El sistema cumple una premisa fundamental específica:
 
 ### **Especialización Matemática**
 - Procesamiento exclusivo de productos de factores polinómicos
-- Expansión algebraica precisa usando SymPy
+- Expansión algebraica precisa usando SymPy y latex2sympy2
 - Mantenimiento de la notación LaTeX en entrada y salida
 
 ### **Interfaz Gráfica Avanzada**
