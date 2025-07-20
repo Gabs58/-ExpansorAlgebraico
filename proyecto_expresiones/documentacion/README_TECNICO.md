@@ -141,8 +141,9 @@ PIL>=9.5.0             # Procesamiento de imágenes
 
 ### Logs y Debugging
 - Mensajes de estado en GUI
-- Manejo de excepciones detallado
+- Manejo de excepciones detallado 
 - Validación de resultados
+- sitema de debug y login para identificar tipó de error
 
 ### Actualizaciones
 - Compatibilidad con nuevas versiones de SymPy
