@@ -457,7 +457,7 @@ EJEMPLOS_VARIABLES_GRIEGAS = [
 ]
 
 # === NUEVA CATEGORÍA: Ejemplos Cheat Sheet (LaTeX) ===
-EJEMPLOS_CHEATSHEET = [
+EJEMPLOS_CHEATSHEET_LATEX = [
     r"(x_{1}^{2}+2x_{1}+1)(x_{1}-1)",
     r"(y_{2}^{2}+y_{2}+1)(y_{2}-1)",
     r"(a^{2}+2a+1)(a-1)",
