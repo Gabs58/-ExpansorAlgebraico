@@ -1,4 +1,4 @@
-# Instrucciones para el Desarrollador - ExpaAlgebraico
+# Readme para el Desarrollador - ExpaAlgebraico
 
 -------------------------------------------------------------------------------
 
