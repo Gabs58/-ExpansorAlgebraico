@@ -5,7 +5,7 @@ para expandir productos de factores polinómicos.
 El sistema está implementado en Pyton 
 
 
-documentación completa en subcarpeta del proyecto.
+documentación completa en carpeta del proyecto.
 
 
 ExpaAlgebraico/
