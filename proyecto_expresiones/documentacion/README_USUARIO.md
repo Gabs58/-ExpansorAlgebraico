@@ -226,6 +226,5 @@ Para reportar problemas o solicitar mejoras:
 | `\sum_{n=1}^{5} (n+1)(n-1)` | `\sum_{n=1}^{5} (n^2 - 1)` |
 | `\int_0^1 (x^2+1)(x-1) dx` | `\int_0^1 (x^3 - x^2 + x - 1) dx` |
 | `\frac{d}{dx}[(x^2+1)(x-1)]` | `\frac{d}{dx}[x^3 - x^2 + x - 1]` |
-| `\sin(x)(x^2+1)` | `\sin(x) \cdot x^2 + \sin(x)` |
 
 --- 
